@@ -1,0 +1,188 @@
+/*Wp  BlockQuote */
+blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-style-large):not(.is-style-large) {
+  background-color: rgba(232, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 50px 100px 45px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: none;
+  position: relative;
+  color: #fff;
+  z-index: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "\f110";
+    font-family: 'flaticon';
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    left: 45px;
+    color: var(--main-color-one);
+    font-size: 30px;
+    line-height: .8;
+  }
+
+  p {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  cite {
+    color: #000 !important;
+    font-weight: 400;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: block;
+    font-style: normal;
+    font-family: var(--body-font);
+    position: relative;
+    z-index: 0;
+    padding-left:75px;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 60px;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+}
+
+//Element Blockqute
+.element-blockquote {
+  background-color: #F8F9FF;
+  padding: 30px;
+  position: relative;
+  @media only screen and (max-width: 575px) {
+    text-align: left;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--main-color-one);
+  }
+  .quote-area {
+    @media only screen and (max-width: 575px) {
+      display: block !important;
+    }
+  }
+  .quote-icon {
+    font-size: 70px;
+    line-height: 70px;
+    color: var(--main-color-one);
+    @media only screen and (max-width: 575px) {
+      font-size: 50px;
+    }
+  }
+  .quote-icon--style {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 70px;
+    color: rgba(0, 0, 0, 0.03);
+    @media only screen and (max-width: 575px) {
+      font-size: 50px;
+    }
+  }
+  .quote-content-area {
+    width: calc(100% - 70px);
+    padding-left: 30px;
+    text-align: left;
+    @media only screen and (max-width: 575px) {
+      width: 100%;
+      padding-left: 0;
+    }
+    span {
+      color: #333333;
+      padding-left: 0;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .quote-content {
+    font-size: 18px !important;
+    font-style: normal;
+    font-family: var(--body-font);
+    text-transform: unset;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 5px;
+    @media only screen and (max-width: 575px) {
+      font-size: 16px !important;
+    }
+  }
+}
+//Element Blockquote two
+.element-blockquote-with-image{
+  padding: 40px 100px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  @media only screen and (max-width: 991px) {
+    padding: 20px;
+  }
+  .quote-icon{
+    font-size: 70px;
+    color: var(--main-color-one);
+  }
+  .quote-content-area{
+    span{
+      position: relative;
+      font-size: 16px;
+      padding-right: 70px;
+      padding-left: 70px;
+      color: $white;
+      &::before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 0;
+        width: 50px;
+        height: 1px;
+        background-color: rgba(232, 0, 0, 0.7);
+      }
+      &::after{
+        position: absolute;
+        content: '';
+        top: 10px;
+        right: 0;
+        width: 50px;
+        height: 1px;
+        background-color: rgba(232, 0, 0, 0.7);
+      }
+      @media only screen and (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .quote-content{
+    font-size: 24px !important;
+    color: $white;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    @media only screen and (max-width: 991px) {
+      font-size: 16px !important;
+    }
+  }
+}

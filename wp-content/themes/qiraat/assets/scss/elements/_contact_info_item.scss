@@ -1,0 +1,61 @@
+/*-------------------------
+    Contact Info Item
+-------------------------*/
+
+.contact-item {
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  border-radius: 6px;
+  padding: 40px 20px 25px 20px;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+}
+
+.contact-icon-area {
+  position: relative;
+  margin-bottom: 30px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: 39%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/element/element-27.png);
+    background-repeat: no-repeat;
+    @media only screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+  .contact-icon {
+    width: 55px;
+    height: 70px;
+    font-size: 25px;
+    color: $white;
+    line-height: 70px;
+    background-color: var(--main-color-one);
+    border-radius: 999px;
+    display: inline-block;
+    text-align: center;
+    img {
+      width: 25px;
+    }
+  }
+}
+
+.contact-content {
+  .title {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 1.9em;
+  }
+  a{
+    color: #ffbe01;
+    font-weight: 700;
+  }
+}

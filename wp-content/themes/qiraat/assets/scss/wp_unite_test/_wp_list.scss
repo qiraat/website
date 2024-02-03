@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+# WP List
+--------------------------------------------------------------*/
+.content-area {
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  ol {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.blog-single-content-wrap {
+  ol {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.page-content {
+  ol {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.single-comment-wrap {
+  ol {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.comments-area {
+  .comment-list {
+
+    .trackback {
+      margin-bottom: 30px;
+    }
+
+    .pingback {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.carousel-indicators {
+  li {
+    + {
+      li {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+.footer-widget.widget.widget_nav_menu {
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

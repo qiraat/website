@@ -1,0 +1,123 @@
+/*----------------------
+    [ ## call-widget ]
+------------------------*/
+.account-widget-form-area{
+  padding: 40px;
+  border-radius: 10px;
+  .nice-select{
+    &::after{
+      border-bottom: 2px solid #8B8B8B;
+      border-right: 2px solid #8B8B8B;
+    }
+    span{
+      color: #8B8B8B;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 30px;
+  }
+}
+.form--control{
+  background-color: rgba(46,46,46,0.9);
+  border: 1px solid #676767;
+  box-shadow: none;
+  height: 60px;
+  color: #8B8B8B;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  padding: 15px 25px;
+  width: 100%;
+  @media only screen and (max-width: 991px) {
+    font-size: 14px;
+  }
+  &:focus{
+    background-color: $white;
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: var(--heading-color);
+    &::placeholder{
+      color: var(--heading-color);
+    }
+  }
+  &::placeholder{
+    color: #8B8B8B;
+  }
+}
+textarea{
+  &.form--control{
+    min-height: 220px;
+  }
+}
+//Event Form
+.event-form {
+  .form--control {
+    background-color: $white;
+    opacity: .9;
+    color: var(--heading-color);
+    border: 1px solid #CFCFCF;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 3px;
+    height: 55px;
+    &:focus {
+      border: 1px solid var(--main-color-one);
+      opacity: 1;
+    }
+    &::placeholder {
+      color: #535353;
+    }
+  }
+}
+//Apply Form
+
+.account-widget-form {
+  .nice-select {
+    &::after {
+      border-bottom: 2px solid #8B8B8B;
+      border-right: 2px solid #8B8B8B;
+    }
+    span {
+      color: #8B8B8B;
+    }
+  }
+  .form--control {
+    background-color: $white;
+    border: 1px solid #e6e6e6;
+    font-weight: 400;
+    &:focus {
+      border: 1px solid rgba(232, 0, 0, 0.5);
+    }
+  }
+}
+/*Ajex Loader*/
+
+.mc4wp-response p{
+  color: #fff;
+  margin-top: 20px;
+}
+.wpcf7 .ajax-loader {
+  display: none;
+}
+
+.wpcf7 form.submitting .ajax-loader {
+  display: block;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output,
+.wpcf7 form .wpcf7-response-output {
+  color: var(--main-color-one);
+  border-color: var(--main-color-one);
+  border-radius: 2px;
+}
+
+.wpcf7-list-item {
+  margin-left: 27px;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: var(--main-color-one);
+}

@@ -1,0 +1,23 @@
+.feature-item {
+  min-height: 530px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .feature-content{
+    padding: 45px 25px;
+    text-align: center;
+    .title{
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 42px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .style-01{
+      margin-right: 20px;
+    }
+  }
+}

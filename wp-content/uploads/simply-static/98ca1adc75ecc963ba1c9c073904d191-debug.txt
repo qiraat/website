@@ -1,0 +1,46 @@
+[2024-02-03 14:24:30] [class-ss-archive-creation-job.php:87] Starting a job; no job is presently running
+[2024-02-03 14:24:30] [class-ss-archive-creation-job.php:88] Here's our task list: setup, fetch_urls, create_zip_archive, wrapup
+[2024-02-03 14:24:30] [class-ss-archive-creation-job.php:102] Pushing first task to queue: setup
+[2024-02-03 14:24:32] [class-ss-archive-creation-job.php:136] Current task: setup
+[2024-02-03 14:24:32] [class-ss-archive-creation-job.php:153] Performing task: setup
+[2024-02-03 14:24:32] [class-ss-task.php:44] Status message: [setup] Setting up
+[2024-02-03 14:24:32] [class-ss-setup-task.php:33] Creating archive directory: F:\laragon\www\Qiraat/wp-content/uploads\simply-static\temp-files/simply-static-1-1706970270\
+[2024-02-03 14:24:32] [class-ss-setup-task.php:79] Adding origin URL to queue: https://github.com/qiraat/website.git/
+[2024-02-03 14:24:32] [class-ss-archive-creation-job.php:175] We've found our next task: fetch_urls
+[2024-02-03 14:24:32] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-02-03 14:24:32] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-02-03 14:24:32] [class-ss-fetch-urls-task.php:55] Total pages: 1; Pages remaining: 1
+[2024-02-03 14:24:32] [class-ss-fetch-urls-task.php:58] URL: https://github.com/qiraat/website.git/
+[2024-02-03 14:24:32] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 1
+[2024-02-03 14:24:32] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-02-03 14:24:32] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Users\nurfu\AppData\Local\Temp/65be4ca0d2e0e-UvEH6V.tmp
+[2024-02-03 14:24:32] [class-ss-page-handler.php:38] URL Prepared:https://github.com/qiraat/website.git/?simply_static_page=21
+[2024-02-03 14:24:32] [class-ss-url-fetcher.php:251] Fetching URL: https://github.com/qiraat/website.git/?simply_static_page=21
+[2024-02-03 14:24:33] [class-ss-url-fetcher.php:103] Filesize: 162 bytes
+[2024-02-03 14:24:33] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html
+[2024-02-03 14:24:33] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-02-03 14:24:33] [class-ss-fetch-urls-task.php:190] redirect_url: https://github.com/qiraat/website/
+[2024-02-03 14:24:33] [class-ss-fetch-urls-task.php:229] Creating a redirect page
+[2024-02-03 14:24:33] [class-ss-url-fetcher.php:233] New filename for static page: /index.html
+[2024-02-03 14:24:33] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 1 pages/files
+[2024-02-03 14:24:33] [class-ss-archive-creation-job.php:181] We're not done with the fetch_urls task yet
+[2024-02-03 14:24:33] [class-ss-archive-creation-job.php:136] Current task: fetch_urls
+[2024-02-03 14:24:33] [class-ss-archive-creation-job.php:153] Performing task: fetch_urls
+[2024-02-03 14:24:33] [class-ss-fetch-urls-task.php:55] Total pages: 1; Pages remaining: 0
+[2024-02-03 14:24:33] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 1 of 1 pages/files
+[2024-02-03 14:24:33] [class-ss-archive-creation-job.php:175] We've found our next task: create_zip_archive
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:136] Current task: create_zip_archive
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:153] Performing task: create_zip_archive
+[2024-02-03 14:24:34] [class-ss-create-zip-archive.php:71] Fetching list of files to include in zip
+[2024-02-03 14:24:34] [class-ss-create-zip-archive.php:80] Creating zip archive
+[2024-02-03 14:24:34] [class-ss-task.php:44] Status message: [create_zip_archive] ZIP archive created:  <a href="http://qiraat.test/wp-content/uploads/simply-static/temp-files/simply-static-1-1706970270.zip">Click here to download</a>
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:175] We've found our next task: wrapup
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:136] Current task: wrapup
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:153] Performing task: wrapup
+[2024-02-03 14:24:34] [class-ss-wrapup-task.php:22] Deleting temporary files
+[2024-02-03 14:24:34] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:170] This task is done and there are no more tasks, time to complete the job
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:197] Completing the job
+[2024-02-03 14:24:34] [class-ss-archive-creation-job.php:324] Status message: [done] Done! Finished in 00:00:04
+[2024-02-03 14:25:10] [class-ss-url-fetcher.php:251] Fetching URL: https://github.com/qiraat/website.git
+[2024-02-03 14:41:30] [class-ss-url-fetcher.php:251] Fetching URL: https://github.com/qiraat/website.git

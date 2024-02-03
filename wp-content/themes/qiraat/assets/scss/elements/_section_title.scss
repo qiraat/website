@@ -1,0 +1,56 @@
+/*-------------------------
+    Section Title
+-------------------------*/
+.theme-heading-title {
+  &.white {
+    .subtitle {
+      color: $white;
+    }
+
+    .title {
+      color: $white;
+    }
+
+    p {
+      color: $white;
+    }
+  }
+
+  .title {
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin-bottom: 14px;
+
+    span {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(180deg, #FFBE01 0%, rgba(255, 91, 1, 0.9) 100%);
+      font-family: var(--heading-font);
+    }
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    margin-bottom: 13px;
+    color: var(--heading-color);
+
+    span {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(180deg, #FFBE01 0%, rgba(255, 91, 1, 0.9) 100%);
+    }
+  }
+
+  p {
+    color: #333333;
+  }
+}
